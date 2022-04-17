@@ -38,8 +38,8 @@ import java.util.List;
 **/
 
 public class OsmesisExample_3 {
-	public static final String configurationFile = "inputFiles/Example1_configuration.json";
-	public static final String osmesisAppFile =  "inputFiles/Example1_Worload.csv";
+	public static final String configurationFile = "inputFiles/Example3_configuration.json";
+	public static final String osmesisAppFile =  "inputFiles/Example3_Worload.csv";
     OsmosisBuilder topologyBuilder;
 	OsmesisBroker osmesisBroker;
 	List<OsmesisDatacenter> datacenters;
