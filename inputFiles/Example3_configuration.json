@@ -190,51 +190,11 @@
 			"name": "sdwan_router_1",
 			"controller": "dc2_sdn1",
 			"iops":1000000000
-		},
-		{
-			"type" : "gateway",
-			"name": "sdwan_router_2",
-			"controller": "dc3_sdn1",
-			"iops":1000000000 
-		},
-		{
-			"type" : "gateway",
-			"name": "sdwan_router_3",
-			"controller": "dc3_sdn1",
-			"iops":1000000000 
-		},
-		{
-			"type" : "gateway",
-			"name": "sdwan_router_4",
-			"controller": "dc3_sdn1",
-			"iops":1000000000 
-		},
-		{
-			"type" : "gateway",
-			"name": "sdwan_router_5",
-			"controller": "dc3_sdn1",
-			"iops":1000000000 
-		},
-		{
-			"type" : "gateway",
-			"name": "sdwan_router_6",
-			"controller": "dc3_sdn1",
-			"iops":1000000000 
 		}
 		],
 		"links": [
 			{ "source" : "edge1_gateway" , "destination" : "sdwan_router_1" , "bw" : 1000},
-			{ "source" : "sdwan_router_1" , "destination" : "sdwan_router_2" , "bw" : 1000},
-			{ "source" : "sdwan_router_1" , "destination" : "sdwan_router_3" , "bw" : 1000},
-			{ "source" : "sdwan_router_2" , "destination" : "sdwan_router_4" , "bw" : 1000},
-			{ "source" : "sdwan_router_2" , "destination" : "sdwan_router_5" , "bw" : 1000},
-			{ "source" : "sdwan_router_3" , "destination" : "sdwan_router_4" , "bw" : 1000},
-			{ "source" : "sdwan_router_3" , "destination" : "sdwan_router_5" , "bw" : 1000},
-			
-			{ "source" : "sdwan_router_4" , "destination" : "sdwan_router_6" , "bw" : 1000},
-			{ "source" : "sdwan_router_5" , "destination" : "sdwan_router_6" , "bw" : 1000},
-			
-			{ "source" : "dc1_gateway" , "destination" : "sdwan_router_6" , "bw" : 1000}			
+			{ "source" : "sdwan_router_1" , "destination" : "dc1_gateway" , "bw" : 1000}
 		]
 	  }
   ]
