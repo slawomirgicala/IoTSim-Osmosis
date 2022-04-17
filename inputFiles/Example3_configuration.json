@@ -188,7 +188,7 @@
 		{
 			"type" : "gateway",
 			"name": "sdwan_router_1",
-			"controller": "dc2_sdn1",
+			"controller": "wan_sdn",
 			"iops":1000000000
 		}
 		],
